@@ -1,0 +1,752 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Glossary of Terms</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Glossary of Terms - Page CSS */
+.glossary-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.glossary-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid #457b9d;
+}
+
+.glossary-hero h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.glossary-hero p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.glossary-search {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #457b9d;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #a8dadc;
+  box-shadow: 0 0 0 3px rgba(168, 218, 220, 0.1);
+}
+
+.search-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #457b9d;
+  background-color: transparent;
+  color: #457b9d;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: #457b9d;
+  color: white;
+}
+
+.filter-btn.active {
+  background-color: #457b9d;
+  color: white;
+}
+
+.glossary-content {
+  margin-bottom: 2rem;
+}
+
+.glossary-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.glossary-item {
+  padding: 1.5rem;
+  border-left: 4px solid #457b9d;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.glossary-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left-color: #a8dadc;
+}
+
+.glossary-item h3 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.glossary-item .definition {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.glossary-item .etymology {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.glossary-item .etymology strong {
+  color: #457b9d;
+  font-style: normal;
+}
+
+.glossary-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.glossary-item.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .glossary-container {
+    padding: 1rem;
+  }
+
+  .glossary-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .glossary-hero p {
+    font-size: 1rem;
+  }
+
+  .search-filters {
+    justify-content: flex-start;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .glossary-item {
+    padding: 1rem;
+  }
+
+  .glossary-item h3 {
+    font-size: 1.1rem;
+  }
+}.glossary-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.glossary-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 2rem 0;
+  border-bottom: 2px solid #457b9d;
+}
+
+.glossary-hero h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.glossary-hero p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.glossary-search {
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #457b9d;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #a8dadc;
+  box-shadow: 0 0 0 3px rgba(168, 218, 220, 0.1);
+}
+
+.search-filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.2rem;
+  border: 2px solid #457b9d;
+  background-color: transparent;
+  color: #457b9d;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.filter-btn:hover {
+  background-color: #457b9d;
+  color: white;
+}
+
+.filter-btn.active {
+  background-color: #457b9d;
+  color: white;
+}
+
+.glossary-content {
+  margin-bottom: 2rem;
+}
+
+.glossary-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.glossary-item {
+  padding: 1.5rem;
+  border-left: 4px solid #457b9d;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.glossary-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-left-color: #a8dadc;
+}
+
+.glossary-item h3 {
+  font-size: 1.3rem;
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+}
+
+.glossary-item .definition {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+.glossary-item .etymology {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  border-top: 1px solid #ddd;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.glossary-item .etymology strong {
+  color: #457b9d;
+  font-style: normal;
+}
+
+.glossary-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.glossary-item.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .glossary-container {
+    padding: 1rem;
+  }
+
+  .glossary-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .glossary-hero p {
+    font-size: 1rem;
+  }
+
+  .search-filters {
+    justify-content: flex-start;
+  }
+
+  .filter-btn {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.8rem;
+  }
+
+  .glossary-item {
+    padding: 1rem;
+  }
+
+  .glossary-item h3 {
+    font-size: 1.1rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><main class="glossary-container">
+  <section class="glossary-hero">
+    <h1>Glossary of Terms</h1>
+    <p>A comprehensive reference guide to specialized Gnostic terminology, theological concepts, historical terms, and ancient language translations.</p>
+  </section>
+
+  <section class="glossary-search">
+    <input type="text" id="glossary-search" class="search-input" placeholder="Search terms..." aria-label="Search glossary terms">
+    <div class="search-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="theological">Theological</button>
+      <button class="filter-btn" data-filter="historical">Historical</button>
+      <button class="filter-btn" data-filter="linguistic">Linguistic</button>
+    </div>
+  </section>
+
+  <section class="glossary-content">
+    <div class="glossary-list">
+      <div class="glossary-item" data-category="theological">
+        <h3>Aeon</h3>
+        <p class="definition">A divine or celestial being emanating from the Godhead; also refers to an age or eon in the cosmological hierarchy of Gnostic systems.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: αἰών (aión), meaning "age" or "eternity"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Archon</h3>
+        <p class="definition">A ruler or chief of a lower cosmic realm; in Gnostic thought, archons are often malevolent beings who rule the material world and prevent human spiritual ascension.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: ἄρχων (árkhōn), meaning "ruler" or "chief"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Demiurge</h3>
+        <p class="definition">The creator deity of the material world in Gnostic cosmology; often viewed as inferior to the true God and sometimes portrayed as ignorant or malevolent. Associated with the Old Testament God YHWH in some systems.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: δημιουργός (dēmiourgós), meaning "craftsman" or "maker"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Gnosis</h3>
+        <p class="definition">Direct, experiential knowledge of the divine; the salvific knowledge that leads to liberation from the material world and union with the transcendent God. Central to Gnostic spirituality.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: γνῶσις (gnôsis), meaning "knowledge" or "understanding"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Monad</h3>
+        <p class="definition">The supreme, transcendent source of all being; the ultimate, unknowable God in Gnostic cosmology. Often conceived as existing beyond all categories and attributes.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: μονάς (monás), meaning "unity" or "single unit"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Pleroma</h3>
+        <p class="definition">The fullness of the divine realm; the totality of aeons and divine emanations in Gnostic cosmology. Contrasts with the material world or "kenoma" (void).</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: πλήρωμα (plḗrōma), meaning "fullness" or "completeness"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Sophia</h3>
+        <p class="definition">Wisdom personified as a divine feminine principle; in Gnostic myth, Sophia's act of passionate desire causes the emanation of the demiurge and the fall into matter.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: σοφία (sophía), meaning "wisdom"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Hylic</h3>
+        <p class="definition">Relating to matter or the material; in Gnostic anthropology, hylics are humans composed entirely of matter who lack the divine spark and cannot achieve gnosis.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: ὕλη (hýlē), meaning "matter" or "wood"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Psychic</h3>
+        <p class="definition">Relating to the soul; in Gnostic anthropology, psychics are humans with a soul who possess the capacity for faith and can potentially achieve salvation through education and gnosis.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: ψυχή (psychḗ), meaning "soul"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Pneumatic</h3>
+        <p class="definition">Relating to spirit; in Gnostic anthropology, pneumatics are humans endowed with the divine spark and capable of achieving gnosis and salvation.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: πνεῦμα (pneûma), meaning "spirit" or "breath"</p>
+      </div>
+
+      <div class="glossary-item" data-category="historical">
+        <h3>Nag Hammadi Library</h3>
+        <p class="definition">A collection of thirteen ancient codices discovered in 1945 near the town of Nag Hammadi in Upper Egypt, containing fifty-two texts primarily from Gnostic, Hermetic, and early Christian sources from the 4th century CE.</p>
+      </div>
+
+      <div class="glossary-item" data-category="historical">
+        <h3>Cathar</h3>
+        <p class="definition">Members of a dualistic heretical sect in medieval Europe (12th-14th centuries) who held beliefs similar to Gnosticism, including dualism and the rejection of material creation as evil.</p>
+      </div>
+
+      <div class="glossary-item" data-category="historical">
+        <h3>Council of Nicaea</h3>
+        <p class="definition">An ecumenical council of Christian bishops convened in 325 CE by Roman Emperor Constantine to establish orthodoxy and counter heresies including Gnosticism and Arianism.</p>
+      </div>
+
+      <div class="glossary-item" data-category="linguistic">
+        <h3>Coptic</h3>
+        <p class="definition">The last stage of the Egyptian language, written in the Coptic script (a modified Greek alphabet); the language of most texts in the Nag Hammadi Library.</p>
+      </div>
+
+      <div class="glossary-item" data-category="linguistic">
+        <h3>Koine Greek</h3>
+        <p class="definition">The common form of Greek that emerged after Alexander the Great's conquests; the dialect used in early Christian texts and many Gnostic writings.</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Kenoma</h3>
+        <p class="definition">The void or emptiness; in Gnostic cosmology, the material world or realm outside the pleroma, often conceived as inferior and defective.</p>
+        <p class="etymology"><strong>Etymology:</strong> Greek: κένωμα (kénōma), meaning "emptiness" or "void"</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Emanation</h3>
+        <p class="definition">In Gnostic theology, the process by which the divine produces successive levels of being, from the transcendent Monad through progressively lower aeons and ultimately matter.</p>
+      </div>
+
+      <div class="glossary-item" data-category="theological">
+        <h3>Cosmogony</h3>
+        <p class="definition">An account or theory of the origin of the cosmos; Gnostic cosmogonies describe the creation of the material world as a flawed or fallen process.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="glossary-footer">
+    <p>This glossary is continuously updated with new terms and refined definitions. For more detailed exploration, consult the primary texts and scholarly resources available throughout this site.</p>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
