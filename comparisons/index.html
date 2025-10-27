@@ -1,0 +1,1029 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Comparative Study</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Comparative Study - Page CSS */
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.comparison-intro {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.comparison-categories {
+  margin-bottom: 4rem;
+}
+
+.comparison-categories h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 20px rgba(69, 123, 157, 0.15);
+  border-color: #457b9d;
+  transform: translateY(-4px);
+}
+
+.category-card h3 {
+  color: #457b9d;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.category-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  color: #457b9d;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.comparison-section {
+  margin-bottom: 4rem;
+  scroll-margin-top: 80px;
+}
+
+.comparison-section h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.comparison-section h3 {
+  font-size: 1.3rem;
+  color: #457b9d;
+  margin-bottom: 1rem;
+}
+
+.comparison-content {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 4px;
+  border-left: 4px solid #a8dadc;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.comparison-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  color: #457b9d;
+  width: 20%;
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comparison-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+
+.comparison-list strong {
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.comparison-list li::before {
+  content: "▪ ";
+  color: #457b9d;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.comparison-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  border-left: 4px solid #457b9d;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.resources-section {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.resources-section h2 {
+  color: #a8dadc;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.resources-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.resources-list li {
+  margin: 0;
+}
+
+.resources-list a {
+  color: #a8dadc;
+  font-weight: 500;
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: rgba(168, 218, 220, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.resources-list a:hover {
+  background-color: rgba(168, 218, 220, 0.2);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .comparison-intro {
+    padding: 1.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.7rem;
+  }
+
+  .comparison-content {
+    padding: 1.5rem;
+  }
+
+  .resources-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+}.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.comparison-intro {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.comparison-categories {
+  margin-bottom: 4rem;
+}
+
+.comparison-categories h2 {
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover {
+  box-shadow: 0 8px 20px rgba(69, 123, 157, 0.15);
+  border-color: #457b9d;
+  transform: translateY(-4px);
+}
+
+.category-card h3 {
+  color: #457b9d;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.category-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.card-link {
+  color: #457b9d;
+  font-weight: 600;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+}
+
+.comparison-section {
+  margin-bottom: 4rem;
+  scroll-margin-top: 80px;
+}
+
+.comparison-section h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.comparison-section h3 {
+  font-size: 1.3rem;
+  color: #457b9d;
+  margin-bottom: 1rem;
+}
+
+.comparison-content {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 4px;
+  border-left: 4px solid #a8dadc;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #1a1a2e;
+  color: white;
+}
+
+.comparison-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.comparison-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  color: #457b9d;
+  width: 20%;
+}
+
+.comparison-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comparison-list li {
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+
+.comparison-list strong {
+  color: #1a1a2e;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.comparison-list li::before {
+  content: "▪ ";
+  color: #457b9d;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.comparison-note {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 4px;
+  border-left: 4px solid #457b9d;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.resources-section {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  margin-top: 4rem;
+}
+
+.resources-section h2 {
+  color: #a8dadc;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.resources-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.resources-list li {
+  margin: 0;
+}
+
+.resources-list a {
+  color: #a8dadc;
+  font-weight: 500;
+  display: block;
+  padding: 0.75rem 1rem;
+  background-color: rgba(168, 218, 220, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.resources-list a:hover {
+  background-color: rgba(168, 218, 220, 0.2);
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .page-container {
+    padding: 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .comparison-intro {
+    padding: 1.5rem;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .comparison-table {
+    font-size: 0.85rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.7rem;
+  }
+
+  .comparison-content {
+    padding: 1.5rem;
+  }
+
+  .resources-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .resources-list {
+    grid-template-columns: 1fr;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><main class="page-container">
+  <div class="page-header">
+    <h1>Comparative Study</h1>
+    <p class="page-subtitle">Exploring Gnostic texts alongside canonical gospels and related philosophical traditions</p>
+  </div>
+
+  <section class="comparison-intro">
+    <p>This section provides side-by-side analysis of Gnostic texts with canonical Christian gospels, examining similarities, differences, and theological implications. We also explore Gnosticism's relationship to other philosophical and religious traditions including Platonism, Hermeticism, and early Jewish mysticism.</p>
+  </section>
+
+  <section class="comparison-categories">
+    <h2>Comparison Categories</h2>
+    <div class="categories-grid">
+      <div class="category-card">
+        <h3>Gnostic vs. Canonical Gospels</h3>
+        <p>Direct textual comparisons between Gnostic gospels (Thomas, Philip, Mary Magdalene) and the canonical gospels (Matthew, Mark, Luke, John), examining shared sayings, divergent teachings, and theological emphasis.</p>
+        <a href="#gnostic-canonical" class="card-link">View Comparisons →</a>
+      </div>
+      <div class="category-card">
+        <h3>Gnosticism & Platonism</h3>
+        <p>Analysis of philosophical parallels between Gnostic cosmology and Platonic dualism, including concepts of the transcendent divine, material world, and the soul's journey toward enlightenment.</p>
+        <a href="#platonism" class="card-link">View Analysis →</a>
+      </div>
+      <div class="category-card">
+        <h3>Gnosticism & Hermeticism</h3>
+        <p>Exploration of shared esoteric traditions, divine knowledge (gnosis/hermes), and mystical practices that bridge Gnostic Christianity and Hermetic philosophy in the ancient Mediterranean world.</p>
+        <a href="#hermeticism" class="card-link">View Analysis →</a>
+      </div>
+      <div class="category-card">
+        <h3>Gnosticism & Jewish Mysticism</h3>
+        <p>Examination of connections to Merkabah mysticism, apocalyptic literature, and Jewish esoteric traditions that may have influenced or paralleled Gnostic theological developments.</p>
+        <a href="#jewish-mysticism" class="card-link">View Analysis →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="gnostic-canonical" class="comparison-section">
+    <h2>Gnostic vs. Canonical Gospels</h2>
+    <div class="comparison-content">
+      <div class="comparison-table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Aspect</th>
+              <th>Canonical Gospels</th>
+              <th>Gnostic Gospels</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Emphasis</strong></td>
+              <td>Jesus's life, crucifixion, and resurrection as historical events and salvation through faith</td>
+              <td>Jesus's teachings on gnosis; salvation through secret knowledge and self-realization</td>
+            </tr>
+            <tr>
+              <td><strong>The Divine</strong></td>
+              <td>God is omnipotent creator and Father; the good God of Old Testament</td>
+              <td>The supreme transcendent God is distant; the creator (Demiurge) is often portrayed as ignorant or flawed</td>
+            </tr>
+            <tr>
+              <td><strong>Matter & Creation</strong></td>
+              <td>Material world created by God; matter is not inherently evil</td>
+              <td>Material world created by lower powers; often viewed as fallen or corrupted</td>
+            </tr>
+            <tr>
+              <td><strong>Jesus's Nature</strong></td>
+              <td>God incarnate; truly human and truly divine; died and rose physically</td>
+              <td>Divine aeon or revealer; often docetic (appeared human but was purely spiritual)</td>
+            </tr>
+            <tr>
+              <td><strong>Salvation</strong></td>
+              <td>Through faith in Christ's redemptive work and grace from God</td>
+              <td>Through gnosis—secret knowledge of one's divine origin and true nature</td>
+            </tr>
+            <tr>
+              <td><strong>Scripture</strong></td>
+              <td>Old Testament recognized as authoritative revelation</td>
+              <td>Old Testament teachings often reinterpreted; many Gnostics rejected creator God of OT</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="platonism" class="comparison-section">
+    <h2>Gnosticism & Platonism</h2>
+    <div class="comparison-content">
+      <h3>Philosophical Parallels</h3>
+      <ul class="comparison-list">
+        <li>
+          <strong>Dualism of Reality:</strong> Both traditions posit a fundamental division between the transcendent realm of eternal forms/divine and the material/sensory world
+        </li>
+        <li>
+          <strong>The World of Forms vs. Divine Pleroma:</strong> Platonic Forms exist in a transcendent realm; Gnostic pleroma contains divine aeons and emanations
+        </li>
+        <li>
+          <strong>The Soul's Origin:</strong> In Plato, souls pre-exist and descend into bodies; in Gnosticism, divine sparks/spirits are trapped in material bodies
+        </li>
+        <li>
+          <strong>Knowledge as Liberation:</strong> Platonic dialectic leads to understanding of Forms and ascent of soul; Gnostic gnosis liberates the spirit from material imprisonment
+        </li>
+        <li>
+          <strong>The Demiurge:</strong> While Plato's Demiurge is a benevolent craftsman, some Gnostic systems portray the demiurgic creator as ignorant or malevolent
+        </li>
+      </ul>
+      <p class="comparison-note"><em>Note:</em> While there are clear philosophical affinities, scholars debate whether Gnosticism represents a direct Platonic adaptation or independent development with parallel concerns.</p>
+    </div>
+  </section>
+
+  <section id="hermeticism" class="comparison-section">
+    <h2>Gnosticism & Hermeticism</h2>
+    <div class="comparison-content">
+      <h3>Shared Esoteric Traditions</h3>
+      <ul class="comparison-list">
+        <li>
+          <strong>Divine Gnosis/Hermes:</strong> Both traditions emphasize secret wisdom and revelatory knowledge available to initiates
+        </li>
+        <li>
+          <strong>Divine Emanation:</strong> Both describe divine reality as flowing or emanating downward through levels or spheres
+        </li>
+        <li>
+          <strong>The Ascent of the Soul:</strong> In both systems, the enlightened soul journeys through cosmic spheres to reunite with the divine
+        </li>
+        <li>
+          <strong>Hidden Names and Words of Power:</strong> Both traditions employ sacred divine names and utterances central to spiritual practice
+        </li>
+        <li>
+          <strong>Cosmological Hierarchies:</strong> Complex mapping of divine and demonic realms, celestial powers, and intermediary beings
+        </li>
+        <li>
+          <strong>Historical Context:</strong> Both flourished in the 2nd-3rd centuries CE in the Mediterranean and share common cultural-religious environment
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="jewish-mysticism" class="comparison-section">
+    <h2>Gnosticism & Jewish Mysticism</h2>
+    <div class="comparison-content">
+      <h3>Connections and Influences</h3>
+      <ul class="comparison-list">
+        <li>
+          <strong>Merkabah Mysticism:</strong> Both involve mystical ascent through heavenly realms and encounters with divine throne (Merkabah/Chariot)
+        </li>
+        <li>
+          <strong>Apocalyptic Revelations:</strong> Jewish apocalyptic literature and Gnostic texts share visionary experiences and unveiling of divine secrets
+        </li>
+        <li>
+          <strong>Reinterpretation of Torah:</strong> Both engage in esoteric exegesis of Jewish scriptures, finding hidden meanings and divine knowledge
+        </li>
+        <li>
+          <strong>Divine Emanations:</strong> Jewish Kabbalah's Sephiroth and Gnostic emanationism both map divine reality as flowing through multiple levels
+        </li>
+        <li>
+          <strong>Angel/Aeon Hierarchies:</strong> Both systems feature complex celestial hierarchies and divine intermediaries
+        </li>
+        <li>
+          <strong>Historical Proximity:</strong> Early Gnosticism emerged from Jewish communities; many early Gnostics were Jewish or familiar with Jewish esoteric traditions
+        </li>
+      </ul>
+      <p class="comparison-note"><em>Note:</em> The relationship is complex—some Gnostic systems developed as heterodox responses to Jewish tradition, while others appear deeply influenced by Jewish mysticism.</p>
+    </div>
+  </section>
+
+  <section class="resources-section">
+    <h2>Related Resources</h2>
+    <ul class="resources-list">
+      <li><a href="/the-gnostic-gospels/texts">Primary Texts</a> - Read Gnostic and canonical source materials</li>
+      <li><a href="/the-gnostic-gospels/teachings">Teachings</a> - Explore key Gnostic theological concepts</li>
+      <li><a href="/the-gnostic-gospels/history">History</a> - Understand the historical development of Gnosticism</li>
+      <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a> - Access scholarly interpretations and analysis</li>
+      <li><a href="/the-gnostic-gospels/glossary">Glossary</a> - Define key terms and concepts</li>
+    </ul>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
