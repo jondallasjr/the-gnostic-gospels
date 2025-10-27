@@ -1,0 +1,1046 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Gospel of Thomas</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Gnostic Texts & Gospels - Page CSS */
+.texts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.texts-hero {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 0;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+}
+
+.hero-content .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.texts-intro {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+}
+
+.intro-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.texts-grid {
+  margin-bottom: 3rem;
+}
+
+.texts-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-card:hover {
+  border-color: #457b9d;
+  box-shadow: 0 8px 16px rgba(69, 123, 157, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.card-header h3 a {
+  color: #1a1a2e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-header h3 a:hover {
+  color: #457b9d;
+}
+
+.text-type {
+  display: inline-block;
+  background-color: #457b9d;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-body .description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.text-details {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.text-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.text-details li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+}
+
+.text-details strong {
+  color: #333;
+}
+
+.card-footer {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-read {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-read:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.texts-note {
+  background-color: #e8f0f5;
+  border-left: 4px solid #457b9d;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+
+.texts-note h2 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0;
+}
+
+.note-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .texts-container {
+    padding: 1rem;
+  }
+
+  .texts-hero {
+    margin: -1rem -1rem 2rem -1rem;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .texts-grid h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-type {
+    align-self: flex-start;
+  }
+}
+
+
+/* Gospel of Thomas - Page CSS */
+.text-content {
+  margin-top: 3rem;
+}
+
+.text-overview,
+.text-significance,
+.text-themes,
+.text-structure,
+.scholarly-perspective,
+.comparative-analysis,
+.read-more {
+  margin-bottom: 3rem;
+}
+
+.text-overview h2,
+.text-significance h2,
+.text-themes h2,
+.text-structure h2,
+.scholarly-perspective h2,
+.comparative-analysis h2,
+.read-more h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-metadata {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.text-metadata dt {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.text-metadata dd {
+  color: #555;
+  margin: 0;
+}
+
+.significance-list,
+.structure-list,
+.perspective-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.significance-list li,
+.structure-list li,
+.perspective-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.7;
+}
+
+.significance-list li:before,
+.structure-list li:before,
+.perspective-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+  font-size: 1.2rem;
+}
+
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.theme-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 4px solid #457b9d;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover {
+  box-shadow: 0 4px 12px rgba(69, 123, 157, 0.15);
+}
+
+.theme-card h3 {
+  color: #1a1a2e;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.theme-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #16213e;
+  color: white;
+}
+
+.comparison-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.read-link {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: #f8f9fa;
+  border: 2px solid #457b9d;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.read-link:hover {
+  background-color: #457b9d;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .text-metadata {
+    grid-template-columns: 1fr;
+    gap: 0.5rem 0;
+  }
+
+  .themes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem;
+  }
+
+  .text-overview h2,
+  .text-significance h2,
+  .text-themes h2,
+  .text-structure h2,
+  .scholarly-perspective h2,
+  .comparative-analysis h2,
+  .read-more h2 {
+    font-size: 1.4rem;
+  }
+}.text-content {
+  margin-top: 3rem;
+}
+
+.text-overview,
+.text-significance,
+.text-themes,
+.text-structure,
+.scholarly-perspective,
+.comparative-analysis,
+.read-more {
+  margin-bottom: 3rem;
+}
+
+.text-overview h2,
+.text-significance h2,
+.text-themes h2,
+.text-structure h2,
+.scholarly-perspective h2,
+.comparative-analysis h2,
+.read-more h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-metadata {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem 3rem;
+  margin-top: 1.5rem;
+}
+
+.text-metadata dt {
+  font-weight: 600;
+  color: #1a1a2e;
+}
+
+.text-metadata dd {
+  color: #555;
+  margin: 0;
+}
+
+.significance-list,
+.structure-list,
+.perspective-list {
+  list-style: none;
+  margin: 1.5rem 0;
+  padding: 0;
+}
+
+.significance-list li,
+.structure-list li,
+.perspective-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  line-height: 1.7;
+}
+
+.significance-list li:before,
+.structure-list li:before,
+.perspective-list li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+  font-size: 1.2rem;
+}
+
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.theme-card {
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-left: 4px solid #457b9d;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.theme-card:hover {
+  box-shadow: 0 4px 12px rgba(69, 123, 157, 0.15);
+}
+
+.theme-card h3 {
+  color: #1a1a2e;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.theme-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #16213e;
+  color: white;
+}
+
+.comparison-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.read-link {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  background-color: #f8f9fa;
+  border: 2px solid #457b9d;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.read-link:hover {
+  background-color: #457b9d;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .text-metadata {
+    grid-template-columns: 1fr;
+    gap: 0.5rem 0;
+  }
+
+  .themes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 0.75rem;
+  }
+
+  .text-overview h2,
+  .text-significance h2,
+  .text-themes h2,
+  .text-structure h2,
+  .scholarly-perspective h2,
+  .comparative-analysis h2,
+  .read-more h2 {
+    font-size: 1.4rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><div class="texts-container">
+  <div class="texts-hero">
+    <div class="hero-content">
+      <h1>Gospel of Thomas</h1>
+      <p class="lead">A collection of sayings of Jesus without narrative framework, discovered in Nag Hammadi and representing early Gnostic interpretation.</p>
+    </div>
+  </div>
+
+  <div class="texts-intro">
+    <div class="intro-content">
+      <p>The Gospel of Thomas is one of the most significant Gnostic texts discovered among the Nag Hammadi library in 1945. Unlike the canonical gospels, Thomas presents a collection of 114 sayings of Jesus with minimal narrative context, offering a window into early Gnostic Christology and the understanding of gnosis (spiritual knowledge) in primitive Christian communities.</p>
+      <p>This text is believed to date to the first or early second century and may represent an independent tradition of Jesus' teachings that developed outside the mainstream Christian narrative framework.</p>
+    </div>
+  </div>
+
+  <div class="text-content">
+    <section class="text-overview">
+      <h2>Overview</h2>
+      <dl class="text-metadata">
+        <dt>Discovery</dt>
+        <dd>Nag Hammadi, Egypt (1945)</dd>
+        <dt>Dating</dt>
+        <dd>1st-2nd century CE</dd>
+        <dt>Language</dt>
+        <dd>Coptic (translated from Greek original)</dd>
+        <dt>Genre</dt>
+        <dd>Logia (Sayings Collection)</dd>
+        <dt>Sayings Count</dt>
+        <dd>114 Logia</dd>
+      </dl>
+    </section>
+
+    <section class="text-significance">
+      <h2>Significance</h2>
+      <p>The Gospel of Thomas holds particular importance for understanding Gnostic Christianity because:</p>
+      <ul class="significance-list">
+        <li><strong>Sayings Collection:</strong> It preserves Jesus' teachings as wisdom sayings rather than narrative gospel, suggesting an alternative approach to Christian tradition.</li>
+        <li><strong>Emphasis on Gnosis:</strong> The text repeatedly emphasizes the acquisition of divine knowledge and self-knowledge as the path to salvation and eternal life.</li>
+        <li><strong>Anti-Dualism Subtlety:</strong> While not explicitly dualistic, Thomas promotes spiritual interpretation over material reality.</li>
+        <li><strong>Independent Tradition:</strong> Many scholars suggest Thomas preserves independent sayings traditions that predate or developed alongside the canonical gospels.</li>
+        <li><strong>Mystical Interpretation:</strong> The sayings often require spiritual or allegorical interpretation, reflecting Gnostic hermeneutical approaches.</li>
+      </ul>
+    </section>
+
+    <section class="text-themes">
+      <h2>Key Themes</h2>
+      <div class="themes-grid">
+        <div class="theme-card">
+          <h3>Knowledge (Gnosis)</h3>
+          <p>The opening saying declares "Whoever finds the interpretation of these sayings will not taste death," establishing knowledge as salvific.</p>
+        </div>
+        <div class="theme-card">
+          <h3>The Kingdom Within</h3>
+          <p>Jesus teaches that the kingdom is not an external place but an internal reality to be discovered within oneself.</p>
+        </div>
+        <div class="theme-card">
+          <h3>Solitude and Identity</h3>
+          <p>Several sayings emphasize becoming "solitary" and united with one's true self, reflecting Gnostic anthropology.</p>
+        </div>
+        <div class="theme-card">
+          <h3>Rejection of Worldliness</h3>
+          <p>The text emphasizes detachment from material concerns and family ties in pursuit of spiritual truth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-structure">
+      <h2>Structure and Content</h2>
+      <p>The Gospel of Thomas is organized as a simple collection of logia (sayings) with minimal connective narrative. The sayings vary in form and content:</p>
+      <ul class="structure-list">
+        <li>Short wisdom sayings (e.g., Logion 33)</li>
+        <li>Parabolic sayings with allegorical meanings</li>
+        <li>Dialogue sayings with disciples</li>
+        <li>Mystical pronouncements about spiritual truth</li>
+        <li>Ethical teachings reinterpreted in Gnostic context</li>
+      </ul>
+      <p>The text lacks the passion narrative, resurrection account, and biographical framework found in canonical gospels, instead focusing entirely on Jesus' teachings about spiritual knowledge.</p>
+    </section>
+
+    <section class="scholarly-perspective">
+      <h2>Scholarly Perspectives</h2>
+      <p>Scholars debate Thomas' relationship to other gospel traditions:</p>
+      <ul class="perspective-list">
+        <li><strong>Q Source Theory:</strong> Some scholars propose Thomas may represent a form of the hypothetical Q source containing Jesus' sayings.</li>
+        <li><strong>Independent Development:</strong> Others argue Thomas developed independently as a Gnostic reinterpretation of Jesus traditions.</li>
+        <li><strong>Dating Debates:</strong> Estimates range from mid-1st century to mid-2nd century, with profound implications for its historical value.</li>
+        <li><strong>Gnostic Authenticity:</strong> There is scholarly disagreement about how "originally" Gnostic the text is versus how much it reflects later Gnostic interpretation.</li>
+      </ul>
+    </section>
+
+    <section class="comparative-analysis">
+      <h2>Comparison with Canonical Gospels</h2>
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Aspect</th>
+            <th>Gospel of Thomas</th>
+            <th>Canonical Gospels</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Format</td>
+            <td>Sayings collection only</td>
+            <td>Narrative with sayings</td>
+          </tr>
+          <tr>
+            <td>Jesus' Identity</td>
+            <td>Teacher of wisdom/gnosis</td>
+            <td>Messiah, Son of God, savior</td>
+          </tr>
+          <tr>
+            <td>Salvation</td>
+            <td>Knowledge of self and divine truth</td>
+            <td>Faith and redemptive sacrifice</td>
+          </tr>
+          <tr>
+            <td>Resurrection</td>
+            <td>Not mentioned</td>
+            <td>Central to salvation narrative</td>
+          </tr>
+          <tr>
+            <td>Kingdom of God</td>
+            <td>Spiritual/internal state</td>
+            <td>Eschatological future event</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="read-more">
+      <h2>Read the Gospel of Thomas</h2>
+      <p>Full translations of the Gospel of Thomas are available from multiple scholarly sources. The text is relatively brief (approximately 400-500 lines depending on translation) and can be read in one sitting.</p>
+      <p><a href="#" class="read-link">Access Full Text →</a></p>
+    </section>
+  </div>
+
+  <div class="texts-note">
+    <h2>Historical Context Note</h2>
+    <div class="note-content">
+      <p>The Gospel of Thomas was preserved for nearly 1,700 years in the Coptic language after being lost to Western Christianity. Its rediscovery fundamentally challenged assumptions about early Christian diversity and the development of the Christian canon. The text demonstrates that diverse interpretations of Jesus' teachings existed in the early centuries of Christianity, and that Gnostic Christianity was not a later heretical development but an early alternative interpretation of Christian theology.</p>
+    </div>
+  </div>
+</div><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
