@@ -1,0 +1,945 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Contact & Contribute</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Contact & Contribute - Page CSS */
+.contact-page {
+  min-height: calc(100vh - 400px);
+}
+
+.page-header {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+}
+
+.page-header .lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 700px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-content {
+  padding: 2rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #457b9d;
+  box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.1);
+}
+
+.btn {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #457b9d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #36556e;
+  text-decoration: none;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.info-card a {
+  color: #457b9d;
+  font-weight: 600;
+}
+
+.info-description {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem !important;
+}
+
+.contribution-types {
+  background: #f5f5f5;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+
+.contribution-types h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2.5rem;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contribution-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contribution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.contribution-card h3 {
+  color: #457b9d;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contribution-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.newsletter-signup {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.newsletter-signup h2 {
+  font-size: 2rem;
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.newsletter-signup p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form .form-group {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header .lead {
+    font-size: 1rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contributions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form .form-group {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 2rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h2,
+  .contribution-types h2,
+  .newsletter-signup h2 {
+    font-size: 1.5rem;
+  }
+}.contact-page {
+  min-height: calc(100vh - 400px);
+}
+
+.page-header {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: white;
+  padding: 4rem 2rem;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+}
+
+.page-header .lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  max-width: 700px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.contact-content {
+  padding: 2rem 0;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+  font-size: 1.8rem;
+  color: #1a1a2e;
+  margin-bottom: 2rem;
+}
+
+.contact-form {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #457b9d;
+  box-shadow: 0 0 0 3px rgba(69, 123, 157, 0.1);
+}
+
+.btn {
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: #457b9d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #36556e;
+  text-decoration: none;
+}
+
+.info-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-card h3 {
+  color: #1a1a2e;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.info-card p {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.info-card a {
+  color: #457b9d;
+  font-weight: 600;
+}
+
+.info-description {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.5rem !important;
+}
+
+.contribution-types {
+  background: #f5f5f5;
+  padding: 3rem 2rem;
+  margin: 3rem 0;
+  border-radius: 8px;
+}
+
+.contribution-types h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #1a1a2e;
+  margin-bottom: 2.5rem;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.contribution-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contribution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.contribution-card h3 {
+  color: #457b9d;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.contribution-card p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.newsletter-signup {
+  background: linear-gradient(135deg, #16213e 0%, #1a1a2e 100%);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.newsletter-signup h2 {
+  font-size: 2rem;
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.newsletter-signup p {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-form .form-group {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.875rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.newsletter-form input::placeholder {
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-header .lead {
+    font-size: 1rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contributions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-form .form-group {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    padding: 2rem 1rem;
+  }
+
+  .page-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form-section h2,
+  .contact-info-section h2,
+  .contribution-types h2,
+  .newsletter-signup h2 {
+    font-size: 1.5rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><main class="contact-page">
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact & Contribute</h1>
+      <p class="lead">Get in touch with our editorial team, submit corrections, contribute research, or join our community of Gnostic scholars and enthusiasts.</p>
+    </div>
+  </section>
+
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <h2>Send us a Message</h2>
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Select a topic...</option>
+                <option value="general">General Inquiry</option>
+                <option value="correction">Submit a Correction</option>
+                <option value="contribute">Contribute Research</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info-section">
+          <h2>How to Reach Us</h2>
+          
+          <div class="info-card">
+            <h3>Email</h3>
+            <p><a href="mailto:contact@gnosticgospels.com">contact@gnosticgospels.com</a></p>
+            <p class="info-description">For general inquiries and information requests</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Corrections & Submissions</h3>
+            <p><a href="mailto:submissions@gnosticgospels.com">submissions@gnosticgospels.com</a></p>
+            <p class="info-description">Submit corrections, research contributions, or scholarly work</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Response Time</h3>
+            <p>We typically respond within 2-3 business days</p>
+          </div>
+
+          <div class="info-card">
+            <h3>Office Hours</h3>
+            <p>Monday - Friday: 9 AM - 6 PM EST</p>
+            <p>Saturday - Sunday: Closed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contribution-types">
+    <div class="container">
+      <h2>Ways to Contribute</h2>
+      <div class="contributions-grid">
+        <div class="contribution-card">
+          <h3>Report Errors</h3>
+          <p>Found an inaccuracy or typo? Help us maintain the highest quality of scholarship by reporting any errors you encounter.</p>
+        </div>
+        <div class="contribution-card">
+          <h3>Share Research</h3>
+          <p>Conducting Gnostic studies? We welcome peer-reviewed research, translations, and scholarly analysis for publication consideration.</p>
+        </div>
+        <div class="contribution-card">
+          <h3>Suggest Resources</h3>
+          <p>Know of important texts, studies, or figures we should include? Recommend additions to our collection.</p>
+        </div>
+        <div class="contribution-card">
+          <h3>Join Our Community</h3>
+          <p>Subscribe to our newsletter to stay updated on new content, upcoming events, and community discussions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter-signup">
+    <div class="container">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to our newsletter for updates on new texts, scholarly articles, and community news.</p>
+      <form class="newsletter-form" action="#" method="POST">
+        <div class="form-group">
+          <input type="email" name="newsletter-email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
