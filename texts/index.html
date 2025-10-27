@@ -1,0 +1,899 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Gnostic Texts & Gospels</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Gnostic Texts & Gospels - Page CSS */
+.texts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.texts-hero {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 0;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+}
+
+.hero-content .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.texts-intro {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+}
+
+.intro-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.texts-grid {
+  margin-bottom: 3rem;
+}
+
+.texts-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-card:hover {
+  border-color: #457b9d;
+  box-shadow: 0 8px 16px rgba(69, 123, 157, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.card-header h3 a {
+  color: #1a1a2e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-header h3 a:hover {
+  color: #457b9d;
+}
+
+.text-type {
+  display: inline-block;
+  background-color: #457b9d;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-body .description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.text-details {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.text-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.text-details li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+}
+
+.text-details strong {
+  color: #333;
+}
+
+.card-footer {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-read {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-read:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.texts-note {
+  background-color: #e8f0f5;
+  border-left: 4px solid #457b9d;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+
+.texts-note h2 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0;
+}
+
+.note-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .texts-container {
+    padding: 1rem;
+  }
+
+  .texts-hero {
+    margin: -1rem -1rem 2rem -1rem;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .texts-grid h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-type {
+    align-self: flex-start;
+  }
+}
+.texts-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.texts-hero {
+  background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  color: white;
+  padding: 3rem 2rem;
+  margin: -2rem -2rem 2rem -2rem;
+  border-radius: 0;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #a8dadc;
+}
+
+.hero-content .lead {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.texts-intro {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-left: 4px solid #457b9d;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+}
+
+.intro-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.intro-content p:last-child {
+  margin-bottom: 0;
+}
+
+.texts-grid {
+  margin-bottom: 3rem;
+}
+
+.texts-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a1a2e;
+  border-bottom: 2px solid #457b9d;
+  padding-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.text-card:hover {
+  border-color: #457b9d;
+  box-shadow: 0 8px 16px rgba(69, 123, 157, 0.15);
+  transform: translateY(-4px);
+}
+
+.card-header {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.card-header h3 {
+  margin: 0;
+  flex: 1;
+}
+
+.card-header h3 a {
+  color: #1a1a2e;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.card-header h3 a:hover {
+  color: #457b9d;
+}
+
+.text-type {
+  display: inline-block;
+  background-color: #457b9d;
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.card-body .description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.text-details {
+  list-style: none;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.text-details li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.text-details li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+}
+
+.text-details strong {
+  color: #333;
+}
+
+.card-footer {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-read {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-read:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+  transform: translateX(4px);
+}
+
+.texts-note {
+  background-color: #e8f0f5;
+  border-left: 4px solid #457b9d;
+  padding: 2rem;
+  border-radius: 4px;
+  margin-top: 3rem;
+}
+
+.texts-note h2 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  border: none;
+  padding: 0;
+}
+
+.note-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.note-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .texts-container {
+    padding: 1rem;
+  }
+
+  .texts-hero {
+    margin: -1rem -1rem 2rem -1rem;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content .lead {
+    font-size: 1rem;
+  }
+
+  .texts-grid h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text-type {
+    align-self: flex-start;
+  }
+}
+</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><main class="texts-container">
+  <section class="texts-hero">
+    <div class="hero-content">
+      <h1>Gnostic Texts & Gospels</h1>
+      <p class="lead">A comprehensive collection of primary Gnostic texts and gospels discovered at Nag Hammadi and other archaeological sites. These writings represent the diverse theological perspectives of early Gnostic Christianity.</p>
+    </div>
+  </section>
+
+  <section class="texts-intro">
+    <div class="intro-content">
+      <p>The texts presented here are among the most significant primary sources for understanding Gnostic Christianity. Discovered in 1945 near Nag Hammadi, Egypt, these manuscripts provide invaluable insight into the beliefs, practices, and interpretations of Jesus's teachings held by Gnostic communities in the early centuries of the Common Era.</p>
+      <p>Each text is presented with scholarly context, historical background, and key passages highlighted for deeper exploration.</p>
+    </div>
+  </section>
+
+  <section class="texts-grid">
+    <h2>Primary Texts</h2>
+    <div class="grid-container">
+      <article class="text-card">
+        <div class="card-header">
+          <h3><a href="/the-gnostic-gospels/texts/gospel-of-thomas">Gospel of Thomas</a></h3>
+          <span class="text-type">Sayings Gospel</span>
+        </div>
+        <div class="card-body">
+          <p class="description">A collection of 114 sayings attributed to Jesus without narrative framework. This text represents an early layer of Jesus tradition and emphasizes mystical knowledge (gnosis) over salvation history.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 1st century (possibly pre-70 CE)</li>
+            <li><strong>Discovery:</strong> Nag Hammadi Library, 1945</li>
+            <li><strong>Language:</strong> Coptic (translated from Greek)</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="/the-gnostic-gospels/texts/gospel-of-thomas" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+
+      <article class="text-card">
+        <div class="card-header">
+          <h3>Gospel of Philip</h3>
+          <span class="text-type">Wisdom Teaching</span>
+        </div>
+        <div class="card-body">
+          <p class="description">A collection of mystical sayings and teachings emphasizing the nature of gnosis, resurrection, and the relationship between Christ and the soul. Explores symbolic interpretations of Christian sacraments.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 2nd century CE</li>
+            <li><strong>Discovery:</strong> Nag Hammadi Library, 1945</li>
+            <li><strong>Language:</strong> Coptic (translated from Greek)</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+
+      <article class="text-card">
+        <div class="card-header">
+          <h3>Gospel of Mary Magdalene</h3>
+          <span class="text-type">Revelation Dialogue</span>
+        </div>
+        <div class="card-body">
+          <p class="description">A dialogue in which Mary Magdalene receives revelations from the risen Jesus and transmits them to the apostles. Emphasizes the spiritual vision necessary for salvation and Mary's role as a beloved disciple.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 2nd century CE</li>
+            <li><strong>Discovery:</strong> Berlin Codex and Nag Hammadi fragments</li>
+            <li><strong>Language:</strong> Coptic</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+
+      <article class="text-card">
+        <div class="card-header">
+          <h3>Apocryphon of John</h3>
+          <span class="text-type">Revelation Treatise</span>
+        </div>
+        <div class="card-body">
+          <p class="description">A foundational Gnostic text presenting a complete cosmological system including the nature of the true God, the Demiurge, and the path of salvation through gnosis. One of the most comprehensive Gnostic cosmologies.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 2nd century CE</li>
+            <li><strong>Discovery:</strong> Multiple copies in Nag Hammadi Library</li>
+            <li><strong>Language:</strong> Coptic</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+
+      <article class="text-card">
+        <div class="card-header">
+          <h3>Hypostasis of the Archons</h3>
+          <span class="text-type">Cosmological Treatise</span>
+        </div>
+        <div class="card-body">
+          <p class="description">An exposition of Gnostic cosmology describing the nature of the Archons (false rulers), the creation of the material world, and humanity's divine spark trapped within matter. Based on Genesis interpretation.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 2nd-3rd century CE</li>
+            <li><strong>Discovery:</strong> Nag Hammadi Library, 1945</li>
+            <li><strong>Language:</strong> Coptic</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+
+      <article class="text-card">
+        <div class="card-header">
+          <h3>Thunder, Perfect Mind</h3>
+          <span class="text-type">Poetic Revelation</span>
+        </div>
+        <div class="card-body">
+          <p class="description">A powerful poetic text in which a female divine figure (possibly Sophia or the Holy Spirit) reveals herself through paradoxical statements. Emphasizes the transcendent nature of divine knowledge and feminine wisdom.</p>
+          <ul class="text-details">
+            <li><strong>Date:</strong> 2nd century CE</li>
+            <li><strong>Discovery:</strong> Nag Hammadi Library, 1945</li>
+            <li><strong>Language:</strong> Coptic</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="btn-read">Read Full Text →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="texts-note">
+    <div class="note-content">
+      <h2>About These Texts</h2>
+      <p>The texts in this collection represent the primary sources of Gnostic Christianity. They were composed between the 1st and 3rd centuries CE and reflect the theological developments of early Christian Gnostic communities. Most were suppressed by the orthodox church and survived only through rediscovery in archaeological excavations.</p>
+      <p>All translations presented here are based on scholarly editions and are provided for educational purposes. For academic study, consultation of peer-reviewed scholarly editions is recommended.</p>
+    </div>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
