@@ -1,0 +1,716 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1.0'><title>Core Teachings</title><style>/* Global CSS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #457b9d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header Styles */
+.site-header {
+  background-color: #1a1a2e;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #a8dadc;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* Navigation Styles */
+.site-nav {
+  background-color: #16213e;
+  padding: 0;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-menu li {
+  margin: 0;
+}
+
+.nav-menu a {
+  display: block;
+  padding: 1rem 1.2rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+  color: #a8dadc;
+  border-bottom-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.1);
+  text-decoration: none;
+}
+
+/* Footer Styles */
+.site-footer {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+  padding: 3rem 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 2px solid #457b9d;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: #a8dadc;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: #a8dadc;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #457b9d;
+  padding-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .site-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .site-nav.active {
+    max-height: 500px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid #457b9d;
+  }
+
+  .nav-menu a {
+    padding: 0.8rem 1rem;
+    border-bottom: none;
+  }
+
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+/* Core Teachings - Page CSS */
+.teachings-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.page-intro h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+.teachings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.teaching-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.teaching-card:hover {
+  box-shadow: 0 8px 16px rgba(69, 123, 157, 0.15);
+  border-color: #457b9d;
+  transform: translateY(-4px);
+}
+
+.teaching-card h2 {
+  color: #1a1a2e;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.25rem 0;
+}
+
+.learn-more:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+  padding-right: 0.25rem;
+}
+
+.teachings-hierarchy {
+  background-color: #f0f4f8;
+  padding: 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.teachings-hierarchy h2 {
+  color: #1a1a2e;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.hierarchy-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hierarchy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hierarchy-list li {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hierarchy-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+  font-weight: bold;
+}
+
+.teachings-cta {
+  background: linear-gradient(135deg, #457b9d 0%, #1a1a2e 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.teachings-cta h2 {
+  color: #a8dadc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.teachings-cta p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #a8dadc;
+  color: #1a1a2e;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .teachings-main {
+    padding: 1.5rem;
+  }
+
+  .page-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .teachings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .teaching-card {
+    padding: 1.5rem;
+  }
+
+  .teachings-hierarchy {
+    padding: 1.5rem;
+  }
+
+  .teachings-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .teachings-cta h2 {
+    font-size: 1.4rem;
+  }
+}.teachings-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.page-intro {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #457b9d;
+}
+
+.page-intro h1 {
+  font-size: 2.5rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 800px;
+}
+
+.teachings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.teaching-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.teaching-card:hover {
+  box-shadow: 0 8px 16px rgba(69, 123, 157, 0.15);
+  border-color: #457b9d;
+  transform: translateY(-4px);
+}
+
+.teaching-card h2 {
+  color: #1a1a2e;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.teaching-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more {
+  display: inline-block;
+  color: #457b9d;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.25rem 0;
+}
+
+.learn-more:hover {
+  color: #1a1a2e;
+  text-decoration: none;
+  padding-right: 0.25rem;
+}
+
+.teachings-hierarchy {
+  background-color: #f0f4f8;
+  padding: 2.5rem;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.teachings-hierarchy h2 {
+  color: #1a1a2e;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.hierarchy-content p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.hierarchy-list {
+  list-style: none;
+  padding: 0;
+}
+
+.hierarchy-list li {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding-left: 2rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.hierarchy-list li:before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #457b9d;
+  font-weight: bold;
+}
+
+.teachings-cta {
+  background: linear-gradient(135deg, #457b9d 0%, #1a1a2e 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.teachings-cta h2 {
+  color: #a8dadc;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.teachings-cta p {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #a8dadc;
+  color: #1a1a2e;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #fff;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .teachings-main {
+    padding: 1.5rem;
+  }
+
+  .page-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .teachings-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .teaching-card {
+    padding: 1.5rem;
+  }
+
+  .teachings-hierarchy {
+    padding: 1.5rem;
+  }
+
+  .teachings-cta {
+    padding: 2rem 1.5rem;
+  }
+
+  .teachings-cta h2 {
+    font-size: 1.4rem;
+  }
+}</style></head><body><header class="site-header">
+  <div class="header-container">
+    <div class="logo">
+      <a href="/the-gnostic-gospels/"><h1>The Gnostic Gospels</h1></a>
+    </div>
+    <button class="menu-toggle" aria-label="Toggle navigation menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+<script>
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+    document.querySelector('nav').classList.toggle('active');
+  });
+</script><nav class="site-nav">
+  <ul class="nav-menu">
+    <li><a href="/the-gnostic-gospels/">Home</a></li>
+    <li><a href="/the-gnostic-gospels/texts">Texts</a></li>
+    <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+    <li><a href="/the-gnostic-gospels/history">History</a></li>
+    <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+    <li><a href="/the-gnostic-gospels/figures">Figures</a></li>
+    <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+    <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+    <li><a href="/the-gnostic-gospels/about">About</a></li>
+    <li><a href="/the-gnostic-gospels/contact">Contact</a></li>
+  </ul>
+</nav><main class="teachings-main">
+  <section class="page-intro">
+    <h1>Core Teachings of Gnosticism</h1>
+    <p class="intro-text">Gnosticism represents a diverse set of religious movements that emerged in the early centuries of Christianity. At its core lies a radical reinterpretation of cosmology, divinity, and human salvation. This section explores the fundamental theological concepts that define Gnostic thought.</p>
+  </section>
+
+  <section class="teachings-grid">
+    <article class="teaching-card">
+      <h2>Dualism</h2>
+      <p>Gnosticism embraces a fundamental dualism between the spiritual realm and the material world. Unlike orthodox Christianity, which views creation as inherently good, Gnosticism posits that the material world is flawed or even evil, created by an inferior deity. This cosmic dualism shapes the entire Gnostic worldview and salvation narrative.</p>
+      <a href="#dualism" class="learn-more">Explore Dualism →</a>
+    </article>
+
+    <article class="teaching-card">
+      <h2>Gnosis (Divine Knowledge)</h2>
+      <p>Gnosis—meaning "knowledge" in Greek—represents the esoteric, salvific knowledge of divine truth. Unlike faith-based salvation in orthodox Christianity, Gnostic salvation comes through direct experiential knowledge of one's divine nature and origin. This secret knowledge is the path to liberation from material existence.</p>
+      <a href="/the-gnostic-gospels/teachings/gnosis" class="learn-more">Deep Dive into Gnosis →</a>
+    </article>
+
+    <article class="teaching-card">
+      <h2>The Demiurge</h2>
+      <p>The Demiurge is the creator deity of the material world in Gnostic cosmology—often portrayed as ignorant, arrogant, or even malevolent. This figure is distinct from the true transcendent God. The Demiurge's flawed creation explains the suffering and imperfection inherent in material reality and establishes the need for liberation through gnosis.</p>
+      <a href="#demiurge" class="learn-more">Understand the Demiurge →</a>
+    </article>
+
+    <article class="teaching-card">
+      <h2>Sophia (Divine Wisdom)</h2>
+      <p>Sophia represents divine wisdom in the Pleroma (the fullness of the divine realm). In many Gnostic systems, Sophia's fall or error results in the creation of the material world and the Demiurge. Her redemption through gnosis mirrors humanity's path to salvation, making Sophia a central figure in Gnostic mythology and theology.</p>
+      <a href="#sophia" class="learn-more">Explore Sophia →</a>
+    </article>
+
+    <article class="teaching-card">
+      <h2>Gnostic Cosmology</h2>
+      <p>Gnostic cosmology presents a complex structure of multiple divine realms, emanations, and archons (rulers). The material world exists at the lowest level, separated from the transcendent God by numerous intermediate beings. Understanding this cosmic hierarchy is essential to comprehending Gnostic soteriology and the path of ascent through gnosis.</p>
+      <a href="#cosmology" class="learn-more">Map the Cosmos →</a>
+    </article>
+
+    <article class="teaching-card">
+      <h2>The Divine Spark</h2>
+      <p>Gnosticism teaches that certain humans possess a divine spark or pneuma—a fragment of divine essence trapped within material flesh. This spark represents humanity's true nature and divine origin. Awakening to this inner divinity through gnosis is the means of salvation and return to the transcendent realm.</p>
+      <a href="#spark" class="learn-more">Discover the Spark →</a>
+    </article>
+  </section>
+
+  <section class="teachings-hierarchy">
+    <h2>Understanding the Teaching Structure</h2>
+    <div class="hierarchy-content">
+      <p>These core teachings form an interconnected system of belief that fundamentally challenges orthodox Christian theology. Rather than viewing them in isolation, it is essential to understand how they relate to one another:</p>
+      <ul class="hierarchy-list">
+        <li><strong>Dualism</strong> creates the problem: a flawed material world separated from true divinity</li>
+        <li><strong>The Demiurge</strong> explains the cause: an ignorant or malevolent creator of the material realm</li>
+        <li><strong>The Divine Spark</strong> reveals the solution: humanity contains divine essence that can be awakened</li>
+        <li><strong>Gnosis</strong> provides the path: salvific knowledge enables liberation and ascent</li>
+        <li><strong>Sophia</strong> embodies the narrative: divine wisdom's fall and redemption parallels human salvation</li>
+        <li><strong>Gnostic Cosmology</strong> maps the journey: the structure through which ascent occurs</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="teachings-cta">
+    <h2>Dive Deeper</h2>
+    <p>Explore the concept of Gnosis in detail, the central principle of Gnostic salvation:</p>
+    <a href="/the-gnostic-gospels/teachings/gnosis" class="cta-button">Learn About Gnosis</a>
+  </section>
+</main><footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>The Gnostic Gospels</h3>
+      <p>A comprehensive resource for understanding Gnostic Christianity through primary texts, scholarly analysis, and historical context.</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/texts">Primary Texts</a></li>
+        <li><a href="/the-gnostic-gospels/scholarship">Scholarship</a></li>
+        <li><a href="/the-gnostic-gospels/history">History</a></li>
+        <li><a href="/the-gnostic-gospels/teachings">Teachings</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/glossary">Glossary</a></li>
+        <li><a href="/the-gnostic-gospels/figures">Key Figures</a></li>
+        <li><a href="/the-gnostic-gospels/comparisons">Comparisons</a></li>
+        <li><a href="/the-gnostic-gospels/about">About</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="/the-gnostic-gospels/contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 The Gnostic Gospels. All rights reserved.</p>
+  </div>
+</footer></body></html>
